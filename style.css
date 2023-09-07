@@ -1,0 +1,287 @@
+/* CSS basic boiler plate*/
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Custom scrollbar styling starts*/
+
+body {
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    width: 10px;
+    background-color: white;
+}
+
+body::-webkit-scrollbar-thumb {
+    width: 8px;
+    background-color: rgb(65, 65, 65);
+    border-radius: 25px;
+}
+
+/* Custom scrollbar styling ends*/
+
+
+/* Main container styling*/
+
+#cont {
+    background-color: white;
+    margin-top: 0%;
+}
+
+/* Navbar styling*/
+
+.navbar {
+    width: 60%;
+    margin: 0px auto 0px auto;
+    border-radius: 33px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: relative;
+    top: 20px;
+}
+
+.navbar ul {
+    margin: 0px auto;
+}
+
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
+    transition: all 0.2s ease;
+    margin: 0px 12px;
+}
+
+
+.navbar a:hover {
+    color: rgb(144, 238, 230);
+}
+
+/* Hero section styling starts*/
+
+.hero-section p {
+    color: rgb(65, 65, 65);
+}
+
+.hero-section img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.hero-section h1 {
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 1;
+}
+
+.icon-container a {
+    text-decoration: none;
+    color: rgb(96, 96, 96);
+    font-size: 30px;
+    padding: 10px 17px;
+    transition: all 0.3s ease;
+}
+
+
+.icon-container a:hover {
+    color: black;
+    cursor: pointer;
+    filter: drop-shadow(5px 5px 10px #C8C8C8);
+}
+
+.card-container img {
+    transition: all 0.3s ease;
+}
+
+.card-container img:hover {
+    transform: scale(0.9);
+    opacity: .6;
+    cursor: pointer;
+}
+
+/* info section styling*/
+
+.info-section {
+    margin-top: 70px;
+    text-align: left;
+}
+
+
+.card {
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    background-color: rgb(248, 248, 248);
+    cursor: pointer;
+}
+
+
+.card a {
+    display: flex;
+    text-decoration: none;
+    color: rgb(144, 238, 230);
+}
+
+.card-header {
+    background-color: white;
+    border-bottom: 1px solid rgb(236, 236, 236);
+    color: rgb(152, 151, 151);
+    font-size: 18px;
+}
+
+.card-text {
+    font-size: 17px;
+    color: rgb(65, 65, 65);
+}
+
+.card-cont {
+    border: 1px solid rgb(236, 236, 236);
+    padding: 10px 15px;
+}
+
+.ri-mail-unread-line {
+    padding-right: 10px;
+}
+
+.ri-briefcase-line {
+    padding-right: 10px;
+}
+
+.art-link {
+    transition: all 0.3s ease;
+}
+
+.art-link:hover {
+    font-weight: 500;
+    transform: translateX(6px);
+}
+
+.text-cont {
+    font-size: 17px;
+    color: rgb(143, 143, 143);
+}
+
+.card-cont button:hover {
+    background-color: rgb(144, 153, 238);
+    outline: none;
+}
+
+.icon-cont {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.work-cont-one p {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.work-cont-one span {
+    font-size: 17px;
+    line-height: 1;
+    font-weight: 400;
+}
+
+#job-date {
+    font-weight: 300;
+    font-size: 15px;
+    color: rgb(152, 151, 151);
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px 0px;
+}
+
+#jobCompany {
+    display: flex;
+    justify-content: center;
+}
+
+
+.cvButton {
+    width: 90%;
+    border: 1px solid rgb(216, 216, 216);
+}
+
+
+.workExp {
+    border: 1px solid rgb(236, 236, 236);
+    border-radius: 8px;
+}
+
+.workExp span {
+    color: rgb(65, 65, 65);
+    font-size: 16px;
+}
+
+/* footer section styling*/
+
+.footer {
+    border-top: 1px solid rgb(216, 216, 216);
+    height: auto;
+}
+
+
+.footer a {
+    margin-right: 25px;
+    text-decoration: none;
+    color: rgb(75, 75, 75);
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.footer a:hover {
+    color: rgb(144, 238, 230);
+    cursor: pointer;
+}
+
+
+.footer .crText {
+    color: rgb(143, 143, 143);
+    font-size: 14px;
+}
+
+/* media queries for responsive web design*/
+
+@media screen and (max-width:500px) {
+    .navbar {
+        width: 100%;
+    }
+
+    .workExp .comp-icon {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    #jobCompany {
+        justify-content: flex-start;
+    }
+
+    #job-date {
+        padding: 0px;
+    }
+
+    .navbar-toggler {
+        border-radius: 25px;
+        outline: none;
+    }
+}
